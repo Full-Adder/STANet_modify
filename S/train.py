@@ -25,11 +25,6 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 def get_arguments():    # 获取命令行参数的函数
     parser = argparse.ArgumentParser()  # 设置命令行参数解析器
     parser.add_argument("--root_dir", type=str, default=ROOT_DIR)   # 添加参数解析项 --root_dir 项目根目录
-    '''parser.add_argument("--img_dir1", type=str, default='/home/omnisky/data/wgt/train/')
-    parser.add_argument("--img_dir2", type=str, default='/home/omnisky/data/wgt/test/')
-    parser.add_argument("--audio_dir", type=str, default='/home/omnisky/data/wgt/Audio3/')
-    parser.add_argument("--swtich_dir1", type=str, default='/home/omnisky/data/wgt/train_switch/')
-    parser.add_argument("--swtich_dir2", type=str, default='/home/omnisky/data/wgt/train_switch/')'''
     parser.add_argument("--img_dir1", type=str, default='G:\\Data\\train\\')    # img_dir1 是训练集的地址
     parser.add_argument("--img_dir2", type=str, default='G:\\Data\\test\\')     # img_dir2 是测试集的地址
     # parser.add_argument("--audio_dir", type=str, default='G:\\Data\\Audio3\\')  # audio_dir 是音频文件地址
